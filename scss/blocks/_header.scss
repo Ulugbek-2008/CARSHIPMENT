@@ -7,30 +7,19 @@
     z-index: 50;
 }
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include display($items:center, $space:space-between, $gap:0px);
 }
 .header__logo-link {
     display: inline-block;
 }
 .header__content-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    @include display($items:center, $space:start, $gap:50px);
 }
 .header__list {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    @include display($items:center, $space:start, $gap:25px);
 }
 .navbar__link {
-    color: $white-clr;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19.36px;
-    text-transform: uppercase;
+    @include textStyle($MB:0px, $FS:16px, $FW:500, $CLR:$white-clr, $LH:19.36px, $CASE:uppercase);
     transition: all 0.3s linear;
 } 
 .navbar__link:hover{
@@ -56,9 +45,6 @@
     }  
 }
 .header__phone-number {
-    color: $white-clr;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19.36px;
+    @include textStyle($MB:0px, $FS:16px, $FW:500, $CLR:$white-clr, $LH:19.36px, $CASE:uppercase);
     transition: all 0.3s linear;
 }

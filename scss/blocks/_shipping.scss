@@ -1,0 +1,92 @@
+.shipping-section {
+    margin-bottom: 80px;
+    background-image: url(../../images/shipping-background-img.png);
+    background-repeat: no-repeat;
+    background-size: 450px 112px;
+    background-position: right top;
+}
+.shipping__wrapper {
+    padding-top: 155px;
+    width: 527px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.shipping__title {
+    @include textStyle($MB:15px, $FS:38px, $FW:700, $CLR:black, $LH:45.99px, $CASE:none);
+}
+.shipping__title > span{
+    @include textStyle($MB:15px, $FS:38px, $FW:700, $CLR:$orange-clr, $LH:45.99px, $CASE:none);
+}
+.shipping__text {
+    @include textStyle($MB:0px, $FS:16px, $FW:400, $CLR:black, $LH:24px, $CASE:none);
+}
+.rail__content-wrapper {
+    width: 100%;
+    @include display($items:center, $space:space-between, $gap:24px);
+    margin-bottom: 50px;
+}
+.rail__text-wrapper {
+    width: 545px;
+}
+.rail__subtitle {
+    @include textStyle($MB:15px, $FS:24px, $FW:600, $CLR:black, $LH:29.05px, $CASE:none);
+}
+.rail__subtext {
+    @include textStyle($MB:30px, $FS:16px, $FW:400, $CLR:black, $LH:24px, $CASE:none);
+}
+.rail__btn {
+    @include buttonStyles($BTN_W:259px, $BTN_PY:15px, $BTN_BG_CLR:$white-clr, $BTN_BR_RADIUS:3px, $BTN_Border_CLR:$orange-clr, $BTN_FS:16px, $BTN_FW:500, $BTN_LH:19.36px, $BTN_CLR:black, $BTN_CASE:uppercase);
+}
+.rail__btn:hover{
+    @include buttonStyles($BTN_W:259px, $BTN_PY:15px, $BTN_BG_CLR:$orange-clr, $BTN_BR_RADIUS:3px, $BTN_Border_CLR:$orange-clr, $BTN_FS:16px, $BTN_FW:500, $BTN_LH:19.36px, $BTN_CLR:black, $BTN_CASE:uppercase);
+}
+.rail__btn:active{
+    @include buttonStyles($BTN_W:259px, $BTN_PY:15px, $BTN_BG_CLR:$white-clr, $BTN_BR_RADIUS:3px, $BTN_Border_CLR:$orange-clr, $BTN_FS:16px, $BTN_FW:500, $BTN_LH:19.36px, $BTN_CLR:black, $BTN_CASE:uppercase);
+}
+.truck__content-wrapper {
+    width: 100%;
+    @include display($items:center, $space:space-between, $gap:24px);
+    margin-bottom: 50px;
+}
+.truck__text-wrapper {
+    width: 545px;
+}
+.truck__subtitle {
+    @include textStyle($MB:15px, $FS:24px, $FW:600, $CLR:black, $LH:29.05px, $CASE:none);
+}
+.truck__subtext {
+    @include textStyle($MB:30px, $FS:16px, $FW:400, $CLR:black, $LH:24px, $CASE:none);
+}
+.truck__btn {
+    @include buttonStyles($BTN_W:259px, $BTN_PY:15px, $BTN_BG_CLR:$white-clr, $BTN_BR_RADIUS:3px, $BTN_Border_CLR:$orange-clr, $BTN_FS:16px, $BTN_FW:500, $BTN_LH:19.36px, $BTN_CLR:black, $BTN_CASE:uppercase);
+}
+.truck__btn:hover{
+    @include buttonStyles($BTN_W:259px, $BTN_PY:15px, $BTN_BG_CLR:$orange-clr, $BTN_BR_RADIUS:3px, $BTN_Border_CLR:$orange-clr, $BTN_FS:16px, $BTN_FW:500, $BTN_LH:19.36px, $BTN_CLR:black, $BTN_CASE:uppercase);
+}
+.truck__btn:active{
+    @include buttonStyles($BTN_W:259px, $BTN_PY:15px, $BTN_BG_CLR:$white-clr, $BTN_BR_RADIUS:3px, $BTN_Border_CLR:$orange-clr, $BTN_FS:16px, $BTN_FW:500, $BTN_LH:19.36px, $BTN_CLR:black, $BTN_CASE:uppercase);
+}
+.air__content-wrapper {
+    width: 100%;
+    @include display($items:center, $space:space-between, $gap:24px);
+    margin-bottom: 274px;
+}
+.air__text-wrapper {
+    width: 545px;
+}
+.air__subtitle {
+    @include textStyle($MB:15px, $FS:24px, $FW:600, $CLR:black, $LH:29.05px, $CASE:none);
+}
+.air__subtext {
+    @include textStyle($MB:30px, $FS:16px, $FW:400, $CLR:black, $LH:24px, $CASE:none);
+}
+.air__btn {
+    @include buttonStyles($BTN_W:259px, $BTN_PY:15px, $BTN_BG_CLR:$white-clr, $BTN_BR_RADIUS:3px, $BTN_Border_CLR:$orange-clr, $BTN_FS:16px, $BTN_FW:500, $BTN_LH:19.36px, $BTN_CLR:black, $BTN_CASE:uppercase);
+}
+.air__btn:hover{
+    @include buttonStyles($BTN_W:259px, $BTN_PY:15px, $BTN_BG_CLR:$orange-clr, $BTN_BR_RADIUS:3px, $BTN_Border_CLR:$orange-clr, $BTN_FS:16px, $BTN_FW:500, $BTN_LH:19.36px, $BTN_CLR:black, $BTN_CASE:uppercase);
+}
+.air__btn:active{
+    @include buttonStyles($BTN_W:259px, $BTN_PY:15px, $BTN_BG_CLR:$white-clr, $BTN_BR_RADIUS:3px, $BTN_Border_CLR:$orange-clr, $BTN_FS:16px, $BTN_FW:500, $BTN_LH:19.36px, $BTN_CLR:black, $BTN_CASE:uppercase);
+}

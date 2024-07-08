@@ -30,28 +30,19 @@
     border-bottom: 1px solid #E0E0E0;
 }
 .hero__form-title {
-    margin-bottom: 8px;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36.31px;
-    color: #fff;
+    @include textStyle($MB:8px, $FS:30px, $FW:700, $CLR:white, $LH:36.31px, $CASE:capitalize);
 }
 .hero__form-description {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.36px;
+    @include textStyle($MB:0px, $FS:16px, $FW:400, $CLR:white, $LH:19.36px, $CASE:capitalize);
 }
 .hero__form-input-wrapper {
-    display: flex;
+    @include display($items:none, $space:none, $gap:15px);
     flex-direction: column;
-    gap: 15px;
     margin-top: 25px;
 }
 .hero__label {
-    display: flex;
+    @include display($items:none, $space:none, $gap:8px);
     flex-direction: column;
-    gap: 8px;
 }
 .hero__label > .hero__input{
     background-image: url(../../images/form-input-bg.svg);
@@ -63,10 +54,7 @@
     background-image: url(../../images/form-input-bg2.svg);
 }
 .hero__label > span {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18.15px;
-    color: #fff;
+    @include textStyle($MB:0px, $FS:15px, $FW:400, $CLR:white, $LH:18.15px, $CASE:capitalize);
 }
 .hero__input {
     padding: 18px 5px 18px 47px;
@@ -82,39 +70,24 @@
     margin-top: 43px;
 }
 .hero__content > span{
-    color: $white-clr;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16.94px;
+    @include textStyle($MB:0px, $FS:14px, $FW:500, $CLR:white, $LH:16.94px, $CASE:capitalize);
 }
 .hero__title {
-    color: $white-clr;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 67.77px;
+    @include textStyle($MB:0px, $FS:56px, $FW:700, $CLR:white, $LH:67.77px, $CASE:capitalize);
 }
 .hero__text {
-    color: $white-clr;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.2px;
+    @include textStyle($MB:0px, $FS:20px, $FW:400, $CLR:white, $LH:24.2px, $CASE:capitalize);
 }
 .hero__radio-wrapper {
     padding-bottom: 25px;
     border-bottom: 1px solid #E0E0E0;
 } 
 .hero__radio-wrapper > span{
+    @include textStyle($MB:8px, $FS:15px, $FW:400, $CLR:white, $LH:18.15px, $CASE:capitalize);
     display: inline-block;
-    margin-bottom: 8px;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18.15px;
-    color: white;
 }
 .hero__radio-input-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include display($items:center, $space:space-between, $gap:0px);
 }   
 .radio__label {
     padding: 15px;
@@ -143,27 +116,13 @@
 .radio__check-input:checked ~ .radio__circle::before{
     background-color: $orange-clr;
 }
-.radio__content {
-}
 .hero__btn{
-    color: $white-clr;
-    background-color: $orange-clr;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 20.57px;
-    padding: 17px 0;
-    border-radius: 8px;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all 0.3s linear;
+    @include buttonStyles($BTN_W:100%, $BTN_PY:17px, $BTN_BG_CLR:$orange-clr, $BTN_BR_RADIUS:8px, $BTN_Border_CLR:transparent, $BTN_FS:17px, $BTN_FW:500, $BTN_LH:20.57px, $BTN_CLR:$white-clr, $BTN_CASE:none);
      &:hover{
-        color: $orange-clr;
-        background-color: transparent;
-        border-color: $orange-clr;
+        @include buttonStyles($BTN_W:100%, $BTN_PY:17px, $BTN_BG_CLR:transparent, $BTN_BR_RADIUS:8px, $BTN_Border_CLR:$orange-clr, $BTN_FS:17px, $BTN_FW:500, $BTN_LH:20.57px, $BTN_CLR:$white-clr, $BTN_CASE:none);
         box-shadow: 0 0 5px 0 $orange-clr;
      }
      &:active{
-        color: $white-clr;
-        background-color: $orange-clr;
+        @include buttonStyles($BTN_W:100%, $BTN_PY:17px, $BTN_BG_CLR:$orange-clr, $BTN_BR_RADIUS:8px, $BTN_Border_CLR:transparent, $BTN_FS:17px, $BTN_FW:500, $BTN_LH:20.57px, $BTN_CLR:$white-clr, $BTN_CASE:none);
      }
 }

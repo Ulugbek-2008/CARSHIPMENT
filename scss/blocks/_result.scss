@@ -4,9 +4,7 @@
     margin-bottom: 100px;
 }
 .result { 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include display($items:center, $space:space-between, $gap:0px);
 }   
 .result__content-wrapper { 
     width: 350px;
@@ -16,22 +14,13 @@
     flex-wrap: nowrap;
 } 
 .result__title { 
-    font-size: 38px;
-    font-weight: 600;
-    line-height: 40px;
-    color: $white-clr;
+    @include textStyle($MB:0px, $FS:38px, $FW:600, $CLR:$white-clr, $LH:40px, $CASE:none);
 }
 .result__text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.36px;
-    color: $white-clr;
+    @include textStyle($MB:0px, $FS:16px, $FW:400, $CLR:$white-clr, $LH:19.36px, $CASE:none);
 }
 .result__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 55px;
+    @include display($items:center, $space:space-between, $gap:55px);
 }
 .result__item > span{
     display: inline-block;
@@ -42,16 +31,10 @@
     margin: 15px 27px;
 }
 .result__subtitle { 
-    color: $white-clr;
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 60.51px;
+    @include textStyle($MB:0px, $FS:50px, $FW:600, $CLR:$white-clr, $LH:60.51px, $CASE:none);
     text-align: center;
 }
 .result__subtext {
-    color: $white-clr;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.36px;
+    @include textStyle($MB:0px, $FS:16px, $FW:400, $CLR:$white-clr, $LH:19.36px, $CASE:none);
     text-align: center;
 }

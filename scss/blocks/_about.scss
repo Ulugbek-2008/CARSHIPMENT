@@ -1,0 +1,42 @@
+.about-section {
+    margin-bottom: 100px;
+}
+.about__wrapper {
+    margin-top: 100px;
+    width: 100%;
+    @include display($items:center, $space:space-between, $gap:0px);
+}
+.about__content-wrapper{
+    width: 542px;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+.about__wrapper-subtitle { 
+    @include textStyle($MB:16px, $FS:38px, $FW:700, $CLR:black, $LH:45.99px, $CASE:capitalize)
+}
+.about__wrapper-subtitle > span{
+    @include textStyle($MB:16px, $FS:38px, $FW:700, $CLR:$orange-clr, $LH:45.99px, $CASE:capitalize)
+}
+.about__wrapper-text { 
+    @include textStyle($MB:0px, $FS:16px, $FW:300, $CLR:black, $LH:24px, $CASE:none)
+}
+.mission__content-wrapper{
+    width: 100%;
+    @include display($items:center, $space:space-between, $gap:0px);
+}
+.mission__wrapper { 
+    width: 542px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.mission__title { 
+    @include textStyle($MB:16px, $FS:38px, $FW:700, $CLR:black, $LH:45.99px, $CASE:capitalize)
+}  
+.mission__title > span{
+    @include textStyle($MB:16px, $FS:38px, $FW:700, $CLR:$orange-clr, $LH:45.99px, $CASE:capitalize)
+
+}
+.mission__text{
+    @include textStyle($MB:0px, $FS:16px, $FW:300, $CLR:black, $LH:24px, $CASE:none)
+}
